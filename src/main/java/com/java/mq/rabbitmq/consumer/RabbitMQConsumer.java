@@ -6,8 +6,8 @@ import org.springframework.amqp.rabbit.annotation.RabbitListener;
 import org.springframework.stereotype.Service;
 
 @Service
-public class RabbitMQPublisher {
-    private static final Logger LOGGER = LoggerFactory.getLogger(RabbitMQPublisher.class);
+public class RabbitMQConsumer {
+    private static final Logger LOGGER = LoggerFactory.getLogger(RabbitMQConsumer.class);
 
     @RabbitListener(queues = {"${rabbitmq.queue.name}"})
     public void receiveMessage(String message) {
