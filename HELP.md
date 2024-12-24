@@ -8,9 +8,9 @@
 * Spring Boot 1.4.1+
 
 * Execute the docker pull & run commands to start the RabbitMQ Management container
-* > docker pull rabbitmq:2.0.5-management
+* > docker pull rabbitmq:4.0.5-management
 
-* > docker run --rm -it -p 15670:15672 -p 5672:5672 rabbitmq:4.0.5-management
+* > docker run --rm -it -p 15672:15672 -p 5672:5672 rabbitmq:4.0.5-management
   
 * > Launch the browser at http://localhost:15672
   > & Use the default credentials of guest/guest

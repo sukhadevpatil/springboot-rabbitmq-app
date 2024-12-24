@@ -11,3 +11,5 @@ rabbitmq:
     name: my_app_queue
   exchange:
     name: my_app_exchange
+  routing:
+    key: my_app_routing_key
