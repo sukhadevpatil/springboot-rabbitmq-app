@@ -1,4 +1,7 @@
 spring:
+  application:
+    name: springboot-rabbitmq-app
+
   rabbitmq:
     host: localhost
     port: 5672
@@ -9,7 +12,11 @@ spring:
 rabbitmq:
   queue:
     name: my_app_queue
+    json:
+      name: my_app_json_queue
   exchange:
     name: my_app_exchange
   routing:
     key: my_app_routing_key
+    json:
+      key: my_app_json_routing_key
